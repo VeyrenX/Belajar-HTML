@@ -4,17 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Saya</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        img,
+        video,
+        audio {
+            display: block;
+            margin: 20px auto;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
+
     <h1 id="judul">Halo Saya VeyrenX</h1>
+
     <hr id="atas">
-    <h2 id="pengantar">Ingat!:</h2>
 
-    <a href="#deskripsi" title="Deskripsi" style="color: burlywood; font-size: 30px;">
-        Pergi ke Deskripsi
-    </a>
+    <h2 id="pengantar">Ingat!</h2>
 
-    <p style="background-color: aqua; text-align: center; border: 1px solid red;">
+    <p class="center">
+        <a href="#deskripsi" title="Deskripsi">
+            Pergi ke Deskripsi
+        </a>
+    </p>
+
+    <p style="background-color:aqua; border:1px solid red; text-align:center;">
         Saya sedang belajar menjadi <strong>Fullstack Developer</strong>
     </p>
 
@@ -25,56 +67,53 @@
         Tolong di maklumi jika ada kesalahan
     </p>
 
-    <p>Ini adalah percobaan <em>Elemen di HTML</em></p>
-
-    <p><b>Ini adalah percobaan bold</b></p>
+    <p>
+        Ini adalah percobaan <em>Elemen di HTML</em>
+    </p>
 
     <p>
-        <mark>Penting</mark>, jangan lupa untuk <sub>mencoba 100x</sub>
+        <b>Ini adalah percobaan bold</b>
+    </p>
+
+    <p>
+        <mark>Penting</mark>,
+        jangan lupa untuk <sub>mencoba 100x</sub>
     </p>
 
     <p>
         Ini adalah percobaan <sup>Elemen di HTML</sup><br>
-        Saya yakin akan segera bisa dan <b>sukses</b> menjadi seorang <i>Fullstack Developer</i><br>
+        Saya yakin akan segera bisa dan <b>sukses</b>
+        menjadi seorang <i>Fullstack Developer</i>
     </p>
 
-    <p style="text-align: center;">
-        <a href="https://github.com/VeyrenX/Belajar-HTML" title="GitHub Mann" style="color: red; font-size: 20px; border: 1px solid black; background-color: greenyellow;">
+    <p class="center">
+        <a href="https://github.com/VeyrenX/Belajar-HTML"
+           target="_blank"
+           title="GitHub Mann">
             GitHub
         </a>
     </p>
 
-    <p style="text-align: center;">
-        <a href="https://github.com/VeyrenX/Belajar-HTML" target="_blank" title="GitHub Mann" style="color: green; font-size: 20px; border: 1px solid black; background-color: red;">
-            GitHub
-        </a>
-    </p>
+    <audio controls>
+        <source src="Kodok.mp3">
+    </audio>
 
-    <p style="text-align: center; color: red; font-size: 50px;">
-        <audio controls>
-            <source src="Kodok.mp3">
-        </audio>
-    </p>
+    <img
+        src="https://awsimages.detik.net.id/community/media/visual/2024/05/09/meme-kocak-kucing.jpeg?w=1200"
+        width="400"
+        height="300"
+        alt="Meme Kucing"
+    >
 
-    <p style="text-align: center;">
-        <img src="https://awsimages.detik.net.id/community/media/visual/2024/05/09/meme-kocak-kucing.jpeg?w=1200" width="400" height="300">
-    </p>
-
-    <p style="text-align: center;">
-        <video controls width="400" height="300">
-            <source src="Jam 5.mp4">
-        </video>
-    </p>
-
-    <br>
+    <video controls width="400" height="300">
+        <source src="Jam 5.mp4">
+    </video>
 
     <ul>
         <li>Affiliate Sukses</li>
         <li>Remoty Sukses</li>
         <li>Bisnis Jualan Sukses</li>
     </ul>
-
-    <br>
 
     <ol>
         <li>Affiliate Sukses</li>
@@ -83,13 +122,16 @@
     </ol>
 
     <ul>
-        <li>Modal:
+        <li>
+            Modal
             <ul>
                 <li>Affiliate</li>
                 <li>Developer</li>
             </ul>
         </li>
-        <li>Untuk
+
+        <li>
+            Untuk
             <ul>
                 <li>Bisniss</li>
             </ul>
@@ -102,74 +144,68 @@
     </dl>
 
     <table border="1">
-        <tr>
-            <th>Modal</th>
-            <th>Untuk</th>
-        </tr>
-        <tr>
-            <td>Dari Affiliate</td>
-            <td>Bisnis</td>
-        </tr>
-        <tr>
-            <td>Developer</td>
-            <td>Bisnis</td>
-        </tr>
-    </table>
-
-    <br>
-
-    <table border="1" style="text-align: left; font-size: 40px; margin: auto;">
-        <thead>
+        <thead>      
             <tr>
                 <th>Modal</th>
                 <th>Untuk</th>
             </tr>
         </thead>
+
         <tbody>
             <tr>
                 <td>Dari Affiliate</td>
                 <td>Bisnis</td>
             </tr>
+
             <tr>
                 <td>Developer</td>
                 <td>Bisnis</td>
             </tr>
-        </tbody>
+      
+   
+            <tr>
+                <td>Usaha</td>
+                <td>Sukses</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Konsisten</td>
+                <td>Semangat</td>
+            </tr>
+
+            <tr>
+                <td>Stabil</td>
+            </tr>
+
+
+       </tbody>
+        <tfoot> 
+            <tr> 
+                <th colspan="2">MANTAP </th>
+
+            </tr>
+        </tfoot>
     </table>
 
-    <p class="isi">Berfikir</p>
-    <p class="isi">Memulai</p>
-    <p class="isi">Berhasil</p>
+    <p>Berfikir</p>
+    <p>Memulai</p>
+    <p>Berhasil</p>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <hr>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <p>
-        <a href="#atas" style="color: red;">Judul</a>
+    <p class="center">
+        <a href="#atas">Judul</a>
     </p>
 
-    <br>
-    <br>
-    <br>
-
-    <p id="deskripsi">Teentu saja <small>kecil</small></p>
+    <p id="deskripsi">
+        Teentu saja <small>kecil</small>
+    </p>
 
     <hr>
 
     <a href="halaman2.html">Halaman ke 2</a>
+    |
     <a href="halaman4.html">Halaman ke 4</a>
+
 </body>
 </html>
