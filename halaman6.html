@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contoh HTML lengkap dari dasar sampai menengah tanpa CSS.">
+    <title>HTML Lengkap Tanpa CSS</title>
+</head>
+<body>
+    <header>
+        <h1>Website Belajar HTML</h1>
+        <p>Contoh HTML lengkap dari awal sampai akhir tanpa CSS.</p>
+    </header>
+
+    <nav>
+        <a href="#dasar-html">Dasar HTML</a> |
+        <a href="#teks-dasar">Teks Dasar</a> |
+        <a href="#link-navigasi">Link</a> |
+        <a href="#gambar-media">Gambar & Media</a> |
+        <a href="#list">List</a> |
+        <a href="#tabel">Tabel</a> |
+        <a href="#layout-semantic">Semantic</a> |
+        <a href="#form">Form</a> |
+        <a href="#footer">Footer</a>
+    </nav>
+
+    <main>
+        <article>
+            <section id="dasar-html">
+                <h2>1. Dasar HTML</h2>
+                <p>HTML adalah bahasa untuk membuat struktur halaman website. HTML bukan bahasa logika, tetapi bahasa struktur.</p>
+                <p>Contoh elemen paragraf ini menunjukkan bahwa teks biasa ditulis di dalam elemen <strong>p</strong>.</p>
+                <p>Contoh elemen bold memakai <b>b</b>. Contoh elemen penting memakai <strong>strong</strong>.</p>
+                <p>Contoh miring memakai <i>i</i>. Contoh penekanan memakai <em>em</em>.</p>
+                <p>Contoh highlight memakai <mark>mark</mark>.</p>
+                <p>Contoh teks kecil memakai <small>small</small>.</p>
+                <p>Contoh superscript memakai H<sup>2</sup>O.</p>
+                <p>Contoh subscript memakai H<sub>2</sub>O.</p>
+                <hr>
+            </section>
+
+            <section id="teks-dasar">
+                <h2>2. Struktur Dokumen dan Teks Dasar</h2>
+                <p>Bagian ini menunjukkan heading dari <strong>h1</strong> sampai <strong>h6</strong>.</p>
+                <h1>Contoh H1</h1>
+                <h2>Contoh H2</h2>
+                <h3>Contoh H3</h3>
+                <h4>Contoh H4</h4>
+                <h5>Contoh H5</h5>
+                <h6>Contoh H6</h6>
+                <p>Contoh pemisah baris memakai <br> elemen br.</p>
+                <p>Contoh garis pemisah memakai hr.</p>
+                <hr>
+            </section>
+
+            <section id="link-navigasi">
+                <h2>3. Link dan Navigasi</h2>
+                <p>Contoh elemen link memakai <a href="https://example.com">link eksternal</a>.</p>
+                <p>Contoh relative path: <a href="halaman2.html">menuju halaman2.html</a>.</p>
+                <p>Contoh absolute path: <a href="https://github.com">menuju GitHub</a>.</p>
+                <p>Contoh anchor link: <a href="#kontak">lompat ke bagian kontak</a>.</p>
+                <p>Contoh target baru: <a href="https://github.com" target="_blank">buka GitHub di tab baru</a>.</p>
+                <hr>
+            </section>
+
+            <section id="gambar-media">
+                <h2>4. Gambar dan Media</h2>
+                <p>Contoh gambar memakai elemen img dan atribut src serta alt.</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Contoh gambar dari URL" width="120">
+                <p>Contoh gambar lokal: ganti src dengan nama file gambar di folder proyek.</p>
+                <p>Contoh audio memakai audio, controls, dan source.</p>
+                <audio controls>
+                    <source src="Kodok.mp3" type="audio/mpeg">
+                </audio>
+                <p>Contoh video memakai video, controls, dan source.</p>
+                <video controls width="320">
+                    <source src="Jam 5.mp4" type="video/mp4">
+                </video>
+                <hr>
+            </section>
+
+            <section id="list">
+                <h2>5. List</h2>
+                <p>Contoh unordered list memakai ul dan li.</p>
+                <ul>
+                    <li>Belajar HTML</li>
+                    <li>Belajar CSS</li>
+                    <li>Belajar JavaScript</li>
+                </ul>
+                <p>Contoh ordered list memakai ol dan li.</p>
+                <ol>
+                    <li>Siapkan file HTML</li>
+                    <li>Tulis struktur dasar</li>
+                    <li>Simpan dan buka di browser</li>
+                </ol>
+                <p>Contoh nested list.</p>
+                <ul>
+                    <li>Frontend
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </li>
+                    <li>Backend
+                        <ul>
+                            <li>Node.js</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Contoh description list.</p>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>Bahasa untuk membuat struktur halaman website.</dd>
+                    <dt>CSS</dt>
+                    <dd>Bahasa untuk mengatur tampilan halaman website.</dd>
+                </dl>
+                <hr>
+            </section>
+
+            <section id="tabel">
+                <h2>6. Tabel</h2>
+                <p>Contoh tabel memakai table, thead, tbody, tr, th, td, colspan, dan rowspan.</p>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Data Belajar</th>
+                        </tr>
+                        <tr>
+                            <th>Materi</th>
+                            <th>Keterangan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Struktur halaman</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">CSS</td>
+                            <td>Tampilan halaman</td>
+                        </tr>
+                        <tr>
+                            <td>Rapi dan indah</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Selesai</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <hr>
+            </section>
+
+            <section id="layout-semantic">
+                <h2>7. Struktur Layout dan Semantic HTML</h2>
+                <p>Contoh div sebagai wadah umum.</p>
+                <div>
+                    <p>Ini adalah isi di dalam div.</p>
+                </div>
+                <p>Contoh span untuk bagian kecil di dalam teks: Saya suka 
+                    <span>HTML</span>.</p>
+                <header>
+                    <h3>Contoh Header</h3>
+                    <p>Bagian atas halaman.</p>
+                </header>
+                <nav>
+                    <a href="#dasar-html">Dasar HTML</a> |
+                    <a href="#form">Form</a>
+                </nav>
+                <main>
+                    <section>
+                        <h3>Contoh Main</h3>
+                        <p>Ini isi utama halaman.</p>
+                    </section>
+                    <article>
+                        <h3>Contoh Article</h3>
+                        <p>Ini satu konten yang bisa berdiri sendiri.</p>
+                    </article>
+                    <aside>
+                        <h3>Contoh Aside</h3>
+                        <p>Ini informasi sampingan.</p>
+                    </aside>
+                </main>
+                <hr>
+            </section>
+
+            <section id="form">
+                <h2>8. Form</h2>
+                <form action="#" method="post">
+                    <p>
+                        <label for="nama">Nama:</label><br>
+                        <input type="text" id="nama" name="nama" placeholder="Tulis nama ff" required>
+                    </p>
+             
+
+                    <p>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Tulis email" required>
+                    </p>
+                    <p>
+                        <label for="password">Password:</label><br>
+                        <input type="password" id="password" name="password" placeholder="Tulis password" required>
+                    </p>
+                    <p>
+                        <label for="pesan">Pesan:</label><br>
+                        <textarea id="pesan" name="pesan" rows="4" cols="30" placeholder="Tulis pesan"></textarea>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="setuju" required>
+                            Saya setuju
+                        </label>
+                    </p>
+                    <p>
+                        Jenis kelamin:<br>
+                        <label><input type="radio" name="gender" value="laki-laki"> Laki-laki</label><br>
+                        <label><input type="radio" name="gender" value="perempuan"> Perempuan</label>
+                    </p>
+                    <p>
+                        <label for="pilihan">Pilihan:</label><br>
+                        <select id="pilihan" name="pilihan">
+                            <option value="html">HTML</option>
+                            <option value="css">CSS</option>
+                            <option value="js">JavaScript</option>
+                        </select>
+                    </p>
+                    <button type="submit">Kirim</button>
+                </form>
+                <hr>
+            </section>
+
+            <section id="atribut-umum">
+                <h2>9. Atribut Umum</h2>
+                <p>Contoh atribut yang sering dipakai: id, class, title, style, src, href, alt.</p>
+                <p title="Ini atribut title">Arahkan kursor ke teks ini.</p>
+                <p id="kontak">Contoh id untuk anchor link.</p>
+                <p class="contoh">Contoh class untuk pengelompokan.</p>
+                <hr>
+            </section>
+
+            <section id="entities">
+                <h2>10. Entities</h2>
+                <p>Contoh entities: &nbsp; untuk spasi, &lt; untuk tanda kurang dari, &gt; untuk tanda lebih dari, &copy; untuk simbol hak cipta, &amp; untuk tanda ampersand.</p>
+                <hr>
+            </section>
+
+            <section id="aksesibilitas">
+                <h2>11. Aksesibilitas Dasar</h2>
+                <p>Gunakan alt pada gambar, label pada form, heading berurutan, semantic tag, tombol yang benar, dan navigasi keyboard yang jelas.</p>
+                <p>Contoh gambar dengan alt yang jelas:</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Logo React" width="100">
+                <hr>
+            </section>
+
+            <section id="best-practice">
+                <h2>12. Best Practice</h2>
+                <p>Penulisan rapi, indentasi jelas, nama file mudah dipahami, class dan id jelas, jangan kebanyakan div, dan cek struktur HTML.</p>
+                <hr>
+            </section>
+
+            <section id="project-latihan">
+                <h2>13. Project Latihan</h2>
+                <p>Contoh project yang bisa kamu buat setelah belajar HTML:</p>
+                <ol>
+                    <li>Biodata</li>
+                    <li>Artikel sederhana</li>
+                    <li>Halaman profil</li>
+                    <li>Form login</li>
+                    <li>Tabel data</li>
+                    <li>Landing page statis</li>
+                </ol>
+            </section>
+        </article>
+
+        <aside>
+            <h2>Catatan Singkat</h2>
+            <p>Semua teks di halaman ini dibuat untuk menjelaskan fungsi elemen HTML secara langsung.</p>
+        </aside>
+    </main>
+
+    <footer id="footer">
+        <p>Halaman latihan HTML tanpa CSS.</p>
+        <p><a href="#">Kembali ke atas</a></p>
+    </footer>
+</body>
+</html>
+
