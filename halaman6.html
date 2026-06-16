@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contoh HTML lengkap dari dasar sampai menengah tanpa CSS.">
-    <title>HTML Lengkap Tanpa CSS</title>
+    <link rel="icon" href="foto1.jpg">
+    <title>HTML Lengkap Tanpa CSS Oi</title>
 </head>
 <body>
     <header>
         <h1>Website Belajar HTML</h1>
-        <p>Contoh HTML lengkap dari awal sampai akhir tanpa CSS.</p>
+        <p dir="rtl">Contoh HTML lengkap dari awal sampai akhir tanpa CSS.</p>
+       <button aria-label="cari"> 😁 </button>
     </header>
 
     <nav>
@@ -69,13 +71,23 @@
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Contoh gambar dari URL" width="120">
                 <p>Contoh gambar lokal: ganti src dengan nama file gambar di folder proyek.</p>
                 <p>Contoh audio memakai audio, controls, dan source.</p>
-                <audio controls>
+                <audio hidden controls>
                     <source src="Kodok.mp3" type="audio/mpeg">
                 </audio>
                 <p>Contoh video memakai video, controls, dan source.</p>
+
+             <figure>
                 <video controls width="320">
                     <source src="Jam 5.mp4" type="video/mp4">
+                    <source src="Jam 5.mp4" type="video/ogg">
                 </video>
+
+                    <figcaption>
+                            Jam Limaa
+                    </figcaption>
+        
+            </figure>
+
                 <hr>
             </section>
 
@@ -197,36 +209,54 @@
 
                     <p>
                         <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email" placeholder="Tulis email" required>
+                        <input type="email" id="email" name="email" placeholder="Tulis email"  required>
                     </p>
                     <p>
                         <label for="password">Password:</label><br>
-                        <input type="password" id="password" name="password" placeholder="Tulis password" required>
+                        <input type="password" id="password" name="password" placeholder="Tulis password"  required>
                     </p>
                     <p>
                         <label for="pesan">Pesan:</label><br>
-                        <textarea id="pesan" name="pesan" rows="4" cols="30" placeholder="Tulis pesan"></textarea>
+                        <textarea id="pesan" name="pesan" rows="10" cols="50" placeholder="Tulis pesan"></textarea>
                     </p>
                     <p>
                         <label>
-                            <input type="checkbox" name="setuju" required>
+                            <input type="checkbox" checked name="setuju" required>
                             Saya setuju
                         </label>
                     </p>
                     <p>
                         Jenis kelamin:<br>
-                        <label><input type="radio" name="gender" value="laki-laki"> Laki-laki</label><br>
-                        <label><input type="radio" name="gender" value="perempuan"> Perempuan</label>
+                        <label><input type="radio" name="gender" value="laki-laki" checked> Laki-laki</label><br>
+                        <label><input type="radio" name="gender" value="perempuan" tabindex="2"> Perempuan</label>
                     </p>
+
+
+
+
                     <p>
-                        <label for="pilihan">Pilihan:</label><br>
-                        <select id="pilihan" name="pilihan">
-                            <option value="html">HTML</option>
-                            <option value="css">CSS</option>
-                            <option value="js">JavaScript</option>
+                        <label for="pilihan">Pilihan:</label>
+                        <br>
+                        <select multiple id="pilihan" name="pilihan">
+                            <optgroup label="Bahasa">
+                                <option value="html">HTML</option>
+                                <option value="css">CSS</option>
+                                <option value="js" selected>JavaScript</option>
+                            </optgroup>
+
+                            <optgroup label="Makanan">
+                                <option value="Ayam1">Mie Ayam</option>
+                                <option value="Ayam2">Ayam Goreng</option>
+                            </optgroup>
+
+
                         </select>
                     </p>
-                    <button type="submit">Kirim</button>
+
+
+
+
+                    <button data-id="123yoo" type="submit">Kirim</button>
                 </form>
                 <hr>
             </section>
@@ -272,18 +302,304 @@
                     <li>Landing page statis</li>
                 </ol>
             </section>
+
+            <section>
+                    <details>
+                        <summary>
+                            Lihat selengkapnya
+                        </summary>
+                        <h2>
+                           <abbr title="HyperText Markup Language">
+                            HTML
+                           </abbr> 
+                        </h2>
+                        <p>
+                            Human Trool Megalotus Litium
+                        </p>
+                      
+
+                    </details>
+            </section>
+
+
+            <p>
+                Gunakan elemen
+                <code>&lt;p&gt;</code>
+                untuk membuat paragraf
+            </p>
+
+            
+
+            <img src="gambar1.png" width="400" height="300" usemap="#peta">
+
+            <map name="peta">
+                <area
+                    shape="rect"
+                    coords="0,0,200,300"
+                    href="halaman4.html"> 
+            </map>
+
+            <picture>
+                <source srcset="gambar1.png" media="(max-width:300px)">
+                 <source srcset="gambar1.png" media="(max-width:600px)">
+                  <img src="gambar1.pnggg" alt="Gambarreee">
+                
+            </picture>
+
+
+            <section>
+             <figure>
+                     <iframe    width="300" height="200" src="https://www.youtube.com/embed/fb3tIAl7gGs">
+                     </iframe>
+                 <figcaption>
+                      Braven
+                 </figcaption>
+             </figure>
+            </section>
+
+
+
+
+
         </article>
 
         <aside>
             <h2>Catatan Singkat</h2>
             <p>Semua teks di halaman ini dibuat untuk menjelaskan fungsi elemen HTML secara langsung.</p>
         </aside>
+
     </main>
+
+
+<time>
+    13 juni 2026
+</time>
+
+    <pre>
+ Nama    : Nyamen
+        Umur    : 22
+          Oke
+    </pre>x
+
+    <video controls width="320">
+        <source src="Ketua Kelas Marah.mp4" type="video/mp4">
+        <track src="sub arab.vtt" kind="subtitles" srclang="ar" label="Arab">
+
+    </video>
+
+    <p> 
+        Namanya adalah <bdi> i nyamen0</bdi> 
+        mantap
+    </p>
+
+    <p>
+        Namanya adalah <bdi dir="rtl"> i nyamen0
+        </bdi> 
+        mantap
+    </p>
+
+    <p>
+        Kebalik lahh |  <bdo dir="rtl"> ini yang ke balik</bdo>
+    </p>
+    <br>
+
+    <p> Produk: <data value="SKU-001" > Celana Jeans Dark Blue</data></p>
+
+    <p>
+        Untuk copy text, tekan <kbd>Ctrl</kbd> + <kbd>C</kbd>
+    </p>
+<p>
+    Akan muncul tulisan <samp>Berhasil menyalin</samp>
+</p>
+
+<p> 
+    Rumus nya adalah:<var>a</var> + <var>b</var> = <var>c</var>
+</p>
+
+<p>
+    Diskon 50%: <span style="color: red;"> <del>100.000</del></span> 50.000
+</p>
+
+<p>
+    Harga dadakan: <del>100.000</del> <ins datetime="2027-01-30" cite="lagi baik aja"> 45.000 </ins>
+</p>
+<p>
+    <s>stok tersedia 100</s> - Habis terjual
+</p>
+
+<p>
+    Ini contoh <u> Underline</u>
+</p>
+
+<ruby>
+    Bu <rp>(</rp><rt>Ibu</rt><rp>)</rp>
+    <br>
+    Guru <rt>(Pengajar)</rt>
+</ruby>
+ 
+<p>
+    <b ase target="_blank">
+</p>
+
+<object data="Hay hi hayoooo.pdf" type="application/pdf" width="600" height="400">
+    <p>
+        Download  PDF  <a href="Hay hi hayoooo.pdf">PDF</a>
+    </p>
+</object>
+
+<embed src="Hay hi hayoooo.pdf" typr="application/pdf" width="600" height="400">
+    
+    
+<canvas style="background-color: aqua;" id="papan" width="400" height="200"></canvas>
+
+    
+<fieldset>
+    <legend>Data pribadi</legend>
+    <label>Nama: <input type="text"></label>
+    <br>
+    <label>Email: <input type="email"></label>
+</fieldset>
+
+
+<input list="kotamana" placeholder="Ketik kota...">
+<datalist id="kotamana">
+    <option value="Jakarta">
+    <option value="Bandung">
+    <option value="Surabaya">
+    <option value="Bali">
+</datalist>
+
+<br>
+<br>
+
+<input type="number" value="0" id="angka1"> + 
+<input type="number" value="0" id="angka2">
+<button onclick="hitung1 ()">Hitung yaa</button>
+<output id="hasil2"></output>
+
+
+
+
+
+
+<table border="1">
+    <caption>Daftar Harga</caption>
+    <colgroup>
+        <col style="background-color:orange">
+        <col style="background-color:yellow">
+        <col style="background-color:aqua">
+        <col style="background-color:red;">
+    </colgroup>
+
+    <thead>
+        <tr>
+            <th colspan="4">Menu Minuman</th>
+        </tr> 
+
+        <tr>
+            <th>Harga</th>
+            <th>Varian 1</th>
+            <th>Varian 2</th>
+            <th>-</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td rowspan="2">Rp,1.000</td>
+            <td>Teh Panas</td>
+            <td>Teh Dingin</td>
+            <td>-</td>
+        </tr>
+
+        <tr><td>Ale-ale</td><td>-</td><td>-</td></tr>
+        
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="4">Total 3 varian</td>
+        </tr>
+    </tfoot>
+
+    
+</table>
+
+
+
+<br>
+<small>2xx</small>x<sup>2</sup>H<sub>2</sub>O
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <footer id="footer">
         <p>Halaman latihan HTML tanpa CSS.</p>
         <p><a href="#">Kembali ke atas</a></p>
     </footer>
+
+    <address>
+        Email: jwjwdfjwf@gmail.com
+    </address>
+    <blockquote>
+ini block quote, awal bukanlah akhir
+    </blockquote>
+<q> 
+    kegagalan adalah awal dari kesuksesan
+</q>
+
+<progress
+    value="90" max="100" title="Memuat....">
+</progress>
+
+<meter value="3" min="0" max="5" title="1 dari 5"
+
+<noscript>
+    JavaScript Belum Aktif
+</noscript>
+<noscript>
+    JavaScript Belum Aktif
+</noscript>
+
+<template>
+    <h2>Ini rahasia hahaha...</h2>
+</template>
+
+
+<dialog open>
+    Beneran?
+</dialog>
+
+
+
+
+
+
+
 </body>
 </html>
 
